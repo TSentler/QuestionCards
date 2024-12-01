@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 541696406065880598}
   - component: {fileID: 142159231251072338}
   - component: {fileID: 802063533198357060}
+  - component: {fileID: 7486853256244296565}
   m_Layer: 5
   m_Name: BoardCanvas
   m_TagString: Untagged
@@ -564,6 +565,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardsParent: {fileID: 1350274377171508660}
   _cardPrefab: {fileID: 221498651675545941, guid: c27e9bb1907f57c428ff2b0be1972520, type: 3}
+--- !u!114 &7486853256244296565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5356643510299727087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630ecd39598db294e9803af90abf4f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8270528417993939608
 GameObject:
   m_ObjectHideFlags: 0
