@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Cards;
+using Infrastructure.StaticData;
 using UnityEngine;
 
 namespace UI.Board
@@ -9,6 +11,7 @@ namespace UI.Board
         [SerializeField] private GameObject _cardPrefab;
     
         private List<GameObject> _cards = new List<GameObject>();
+        private CardsContainer _cardsContainer;
 
         private void Awake()
         {
@@ -16,12 +19,19 @@ namespace UI.Board
             {
                 Destroy(child.gameObject);
             }
+            CardsInfoLoader cardsInfoLoader = new CardsInfoLoader();
+            _cardsContainer = cardsInfoLoader.Load();
         }
 
         public void Add()
         {
             GameObject card = Instantiate(_cardPrefab, _cardsParent);
             _cards.Add(card);
+            
+            CardData cardData = _cardsContainer.GetRandomCard();
+            
+            CardViewer cardViewer = card.GetComponent<CardViewer>();
+            cardViewer.Init(cardData);
         }
 
         public void Clear()

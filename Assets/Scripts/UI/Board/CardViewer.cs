@@ -1,27 +1,21 @@
+using Infrastructure.StaticData;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace UI.Board
 {
-    public class CardData
-    {
-        public string FaceSpriteName;
-        public string Name;
-        public string Message;
-    }
-    
     public class CardViewer : MonoBehaviour
     {
         [SerializeField] private Image _face;
         [SerializeField] private TextMeshProUGUI _name;
-        [SerializeField] private TextMeshProUGUI _message;
+        [SerializeField] private Image _death;
 
-        public void Init(Sprite face, string name, string message)
+        public void Init(CardData cardData)
         {
-            _face.sprite = face;
-            _name.text = name;
-            _message.text = message;
+            _name.text = cardData.Name;
+            _face.sprite = cardData.Face;
+            _death.sprite = cardData.Death;
         }
     }
 }
