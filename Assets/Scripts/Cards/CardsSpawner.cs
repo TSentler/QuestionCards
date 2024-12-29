@@ -1,31 +1,33 @@
 using System.Collections.Generic;
-using Cards;
+using Infrastructure.AssetManagement;
 using Infrastructure.StaticData;
+using UI.Board;
 using UnityEngine;
 
-namespace UI.Board
+namespace Cards
 {
     public class CardsSpawner : MonoBehaviour
     {
-        [SerializeField] private Transform _cardsParent;
-        [SerializeField] private GameObject _cardPrefab;
-    
+        private Transform _cardsParent;
         private List<GameObject> _cards = new List<GameObject>();
         private CardsContainer _cardsContainer;
+        private AssetProvider _assetProvider;
 
-        private void Awake()
+        public void Prepare(Transform cardsParent)
         {
+            _cardsParent = cardsParent;
             foreach (Transform child in _cardsParent)
             {
-                Destroy(child.gameObject);
+                Object.Destroy(child.gameObject);
             }
             CardsInfoLoader cardsInfoLoader = new CardsInfoLoader();
             _cardsContainer = cardsInfoLoader.Load();
+            _assetProvider = new AssetProvider();
         }
 
         public void Add()
         {
-            GameObject card = Instantiate(_cardPrefab, _cardsParent);
+            GameObject card = _assetProvider.Instantiate(AssetsPath.CardPrefab, _cardsParent);
             _cards.Add(card);
             
             CardData cardData = _cardsContainer.GetRandomCard();
@@ -38,7 +40,7 @@ namespace UI.Board
         {
             foreach (GameObject card in _cards)
             {
-                Destroy(card);
+                Object.Destroy(card);
             }
             _cards.Clear();
         }

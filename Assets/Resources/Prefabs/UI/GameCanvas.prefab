@@ -387,6 +387,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3072490643746728459}
   - component: {fileID: 3031290939944065450}
+  - component: {fileID: 4232691689748147858}
+  - component: {fileID: 8789627089884573137}
   m_Layer: 5
   m_Name: PlayableDirector
   m_TagString: Untagged
@@ -436,8 +438,52 @@ PlayableDirector:
     value: {fileID: 7929026143305939038}
   - key: {fileID: 7769626617275860200, guid: 503719a68e9815743a0470a7cebb6c5e, type: 2}
     value: {fileID: 4640201769221523523}
+  - key: {fileID: -8253297067862830558, guid: 503719a68e9815743a0470a7cebb6c5e, type: 2}
+    value: {fileID: 4232691689748147858}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &4232691689748147858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455032463337111363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: e3104f33ea853f9498ea05574519f50f, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8789627089884573137}
+          m_TargetAssemblyTypeName: Cards.DealerShowedReceaver, Assembly-CSharp
+          m_MethodName: FirstDeal
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &8789627089884573137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455032463337111363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6b06f3907b75241b2eb9e04923ace5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530805048780558566
 GameObject:
   m_ObjectHideFlags: 0

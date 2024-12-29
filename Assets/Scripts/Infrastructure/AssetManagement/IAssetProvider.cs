@@ -5,6 +5,8 @@ namespace Infrastructure.AssetManagement
 {
     public interface IAssetProvider: IService
     {
+       public GameObject Instantiate(string path, Transform parent);
+        
        public GameObject Instantiate(string path, Vector3 spawnPosition);
 
        public GameObject Instantiate(string path);
