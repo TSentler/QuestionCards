@@ -290,6 +290,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 87174508198465973, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1350274377171508660, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -314,9 +318,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3442361989519488864, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_fontSize
+      value: 27.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4326600560018638863, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.004211426
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648889109658339575, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.004211426
+      objectReference: {fileID: 0}
     - target: {fileID: 5356643510299727087, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
       propertyPath: m_Name
       value: BoardCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742295781208761530, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001813649594349464, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_fontSize
+      value: 27.75
       objectReference: {fileID: 0}
     - target: {fileID: 7274183991811850701, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
       propertyPath: m_Pivot.x
@@ -417,6 +441,14 @@ PrefabInstance:
     - target: {fileID: 7756023481736665859, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765711600481525787, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1.5300237
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765711600481525787, guid: 9e34cb2d0352a9f45b3eed97d76dc45e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.76499176
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
